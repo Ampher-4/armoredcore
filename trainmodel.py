@@ -82,7 +82,7 @@ from datetime import datetime
 
 
 
-def yolo_predict(model_path, image_path, save_dir="runs/predict", use_proxy=True):
+def yolo_predict(model_path, image_path,  use_proxy=True):
 
     if use_proxy:
         proxy_url = "http://127.0.0.1:7897"
@@ -101,10 +101,6 @@ def yolo_predict(model_path, image_path, save_dir="runs/predict", use_proxy=True
     print(f"load model: {model_path}")
     model = YOLO(model_path)
 
-    #save based on timestamp
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    save_path = os.path.join(save_dir, f"exp_{timestamp}")
-    os.makedirs(save_path, exist_ok=True)
 
     print(f"\nstart to detect: {image_path}")
     results = model.predict(
@@ -115,5 +111,3 @@ def yolo_predict(model_path, image_path, save_dir="runs/predict", use_proxy=True
     )
 
     
-    saved_img_path = os.path.join(save_path, os.path.basename(image_path))
-    print(f"\nresult saved to: {saved_img_path}")
