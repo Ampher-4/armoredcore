@@ -1,0 +1,14 @@
+train: ./datasets/drones/train/images
+val: ./datasets/drones/valid/images
+test: ./datasets/drones/test/images
+
+nc: 4
+names: ['bird', 'drone', 'helicopter', 'plane']
+
+#this is dataset sources identifier, you can ignore it if you don't use roboflow
+#roboflow:
+#  workspace: yoloplay-fmxh4
+#  project: drone-data-small-axoxh-vwmoh
+#  version: 1
+#  license: MIT
+#  url: https://universe.roboflow.com/yoloplay-fmxh4/drone-data-small-axoxh-vwmoh/dataset/1

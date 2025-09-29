@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['tank']
+
+roboflow:
+  workspace: yoloplay-fmxh4
+  project: tank-y14qt-tkrv6
+  version: 1
+  license: Public Domain
+  url: https://universe.roboflow.com/yoloplay-fmxh4/tank-y14qt-tkrv6/dataset/1

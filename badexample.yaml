@@ -1,0 +1,7 @@
+#this file is wrong, don't use it. 
+#i leave it here just as a warning example
+path: "./datasets/drones"
+train: "train/images"
+val: "valid/images"
+nc: 1
+names: ["drone"]
