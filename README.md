@@ -13,8 +13,11 @@
 # How to check my result
 - make sure you installed `opencv-python`, `yt-dlp`, `pafy`, `ultralytics` and `torch`
 - read `./docs.md`
-- if you want to immediate check result you can run `python ./model_realtimeeval.py`, this will open a video and try to detect tanks
+
 if you don't have markdown reader just google "convert markdown to pdf" and upload the docs.md to get a converted pdf
+
+- if you want to immediate check result you can run `python ./model_realtimeeval.py`, this will open a video and try to detect tanks
+
 
 - use command line to run `yolo predict model='./models/drones/best.pt' source='location/to/your/file`
 - or load the python file in a interactive mode, run `python -i`, then inside python run `import trainmodel as ac`, `ac.yolo_predict('./models/drones/best.pt', 'url_or_location_to_your_image_file', False)`
