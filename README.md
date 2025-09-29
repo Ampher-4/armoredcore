@@ -15,7 +15,7 @@
 if you don't have markdown reader just google "convert markdown to pdf" and upload the docs.md to get a converted pdf
 
 - use command line to run `yolo predict model='./models/drones/best.pt' source='location/to/your/file`
-- or load the python file in a interactive mode, run `python i`, then inside python run `import trainmodel as ac`, `ac.yolo_predict('./models/drones/best.pt', 'url_or_location_to_your_image_file', False)`
+- or load the python file in a interactive mode, run `python -i`, then inside python run `import trainmodel as ac`, `ac.yolo_predict('./models/drones/best.pt', 'url_or_location_to_your_image_file', False)`
 the third params decide if using proxy or not when the url points to a online picture. If you want to use proxy please change the addr and port accordingly, otherwise set it as False
 
 NOTICED: if you want to detect tanks, use the model under models/tanks directory. If you want to detect drones, use the model under models/drones directory.
